@@ -27,7 +27,6 @@ model = st.sidebar.selectbox("모델 선택", ["gpt-4o-mini", "gpt-4o", "gpt-3.5
 temperature = st.sidebar.slider("창의성 (temperature)", 0.0, 1.5, 0.7)
 
 # --- 🧹 대화 초기화 버튼 추가
-# 클릭하면 기존 대화 기록을 모두 삭제하고 페이지 새로고침
 if st.sidebar.button("🧹 대화 초기화"):
     st.session_state.messages = []
     st.success("대화가 초기화되었습니다.")
